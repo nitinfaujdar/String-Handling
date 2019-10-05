@@ -8,6 +8,7 @@ public class Solution2 {
               String s = sc.nextLine();
               int i =sc.nextInt();
               int j =sc.nextInt();
+              
               System.out.println(s);
               System.out.println(s.substring(i,j));
 
