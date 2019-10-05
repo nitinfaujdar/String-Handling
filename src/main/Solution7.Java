@@ -2,15 +2,13 @@ import java.util.Scanner;
 
 public class Solution7 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string");
-        String s = sc.nextLine();
-        char[] a = s.toUpperCase().toCharArray();
-        int totalWeight = 0;
-        for (int i = 0; i < s.length(); i++) {
-            int j = a[i];
-            totalWeight = totalWeight + j;
+        int sum = 0;
+        Scanner input = new Scanner(System.in);
+        char[] inputCharArray = input.nextLine().toCharArray();
+        for (int i = 0; i < inputCharArray.length; i++) {
+            int val = inputCharArray[i];
+            sum += val;
         }
-        System.out.println(totalWeight);
+        System.out.println("Total Weight: " + sum);
     }
 }
